@@ -1,54 +1,44 @@
-﻿http://tv.keonhacai.com/vstv.php?sv=cply4.htm
-
-http://haixombia.com/api/vstv.php?sv=
-
-http://play.nhanhtv.com/html8.php?sv=
-
-http://play.nhanhtv.com/html9.php?sv=
-
-http://play.nhanhtv.com/kieng1.php?sv=
-
-http://play.nhanhtv.com/choimedia.php?sv=
-
-http://play.nhanhtv.com/choimedia1.php?sv=
-
-http://play.nhanhtv.com/kieng1.php?sv=
-
-http://oui9mobi.com/pyr/fplyr1.php?id=
-
-http://oui9mobi.com/pyr/fplyr2.php?id=
-
-http://jawaltv.com/flsh/play2.php?id=
-
-http://play.nhanhtv.com/stream.php?sv=
-
-http://www.elahmad.com/tv/clappr.php?id=
-
-http://play.xembongda360.com/player.php?id=
-
-http://xembong.tv/?act=youtube_player&file=uYTHPp8dyIU
-
-https://www.facebook.com/video/embed?video_id=bV1RA73vWec
+﻿
 
 
-https://raw.githack.com/kora-g-live/fplyr1/master/fplyr1.htm
-
-http://vstreamgz.hadara.ps:8081/AlfajertvHD1_web/web/playlist.m3u8
-http://two.alfajertv.com:8081/AlfajertvHDTwo_web/web/chunks.m3u8
-
-aber
-
-https://raw.githack.com/gaberomar/pl/master/plaer2.html?sv=
-
-https://raw.githack.com/kora-g-live/fplyr1/master/fplyr1.htm?sv=
-
-https://raw.githack.com/gaberomar/cply3/master/cply3.htm?sv=
-
----------
-http://www.xemtvhd.com/css/bootstrap.css
 
 
-https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
 
 
-<script type="text/javascript" src="http://oui9mobi.com/fichiers/players/2fashm3u8/player.js"></script>
+<script>
+function getParam ( sname )
+{
+	var params = location.search.substr(location.search.indexOf("?")+1);
+	var sval =  params.replace("sv=", "");
+	return sval;
+}
+var sv = getParam("sv");
+</script>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/hlsjs-p2p-engine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdnbye@latest/dist/clappr-plugin.min.js"></script>
+	<script async src='https://raw.githack.com/cdn-cgi/bm/cv/2172558837/api.js'></script></head>
+<body style="margin:0px">
+<div style="background:#ccc;" id="player"></div>
+<script>
+	if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Mobile Safari/i) || navigator.userAgent.match(/Blackberry/i)){
+		document.write("\<video style=\"width:100%;height:100%\" controls autoplay preload=\"auto\" src=\""+sv+"\"\>\<\/video\>");
+	}else {
+		player = new Clappr.Player({
+			source: sv,
+			parentId: '#player',
+			width: '100%', height: '100%',
+			hideMediaControl: true,
+			autoPlay: true
+		});	
+	}
+	</script>
+	
+<span style="background: transparent; box-sizing: border-box; color: white; font-size: 10px; font-weight: bold; height: 25px; padding: 0px 5px; position: absolute; right: 60px; top: 400px; width: 90px;"></span><img src="https://1.bp.blogspot.com/-JfWb2LWM2_M/Xqt1muzh4CI/AAAAAAAAI1I/mHIUUcGGnMMQ_nrZ-1lfIeMoRM2OpLmBQCK4BGAYYCw/s1600/logo1.png" pagespeed_url_hash="b8e6b5a44e2403b" style="border: none; box-sizing: border-box; height: 30px; padding: 0px; position: absolute; right: 15px; top: 20px; vertical-align: middle; width: 90px;" />
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'58aabf06ed6cedbb',m:'a4594c322560271b4166504730b9a5056ecd18a4-1588013605-1800-Adfpbq1JryTLWWAlCLgSxOqTuTRPs3E7ilOOpJIf1I9Ej4GPPpjkfdmTAsYAeQbOxrS55Qc1rpaUkB+JkFNnnRUxS/lLG6DniL7PpuBmwAMYeztdUTh9eEBvH7iCt8brDnSGLCVtlQ22K3vB6+UKVs81pHakjTVAaE8DagOKez2r',s:[0x6f3f8fd586,0x7ca20708b9],fb:0,}})();</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="7fd48e4e9b637a138f663eba-|49" defer=""></script>
+</body>
+</html>
